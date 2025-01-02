@@ -1,7 +1,7 @@
 <h1 align="center"> macOS on HP 15s-du1040tx </h1>
 
 <p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Lenovo%20ThinkPad%20E570.png" alt="Thinkpad E570" width="750">
+  <img src="https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/blob/main/Resources/MacOS-on-HP-15s-du1040tx.png" alt="15s-du1040tx" width="750">
 </p>
 
 <h4 align="center"> OpenCore config for Hackintosh HP 15s-du1040tx </h4>
