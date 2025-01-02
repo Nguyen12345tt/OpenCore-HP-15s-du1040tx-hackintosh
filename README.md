@@ -35,15 +35,6 @@
   
 ## Screenshots 📷
 
-### CPU Usage and Temperature  
-#### - Normal
-
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/CPU/Normal%20CPU%20Frequency%20and%20Temperature.png" width="300"><img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/CPU/Normal%20CPU%20Usage.png" width="390">
-  
-#### - Maximum
-
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/CPU/Max%20CPU%20Frequency%20and%20Temperature.png" width="300"><img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/CPU/Max%20CPU%20Usage.png" width="390">
-
 ### Sonoma
 <p align="center">
   <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Sonoma-14-3.png">
