@@ -1,10 +1,10 @@
-<h1 align="center"> macOS on Lenovo Thinkpad E570 </h1>
+<h1 align="center"> macOS on HP 15s-du1040tx </h1>
 
 <p align="center">
   <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Lenovo%20ThinkPad%20E570.png" alt="Thinkpad E570" width="750">
 </p>
 
-<h4 align="center"> OpenCore config for Hackintosh Lenovo Thinkpad E570 </h4>
+<h4 align="center"> OpenCore config for Hackintosh HP 15s-du1040tx </h4>
 
 <p align="center">
 <a href="https://www.apple.com/macos/sonoma-preview/">
