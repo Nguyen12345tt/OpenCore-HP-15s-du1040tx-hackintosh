@@ -118,16 +118,19 @@ Fn shortcut keys   |  ✅
 ## Kext Used
 Kext | Info | MinKernel | MaxKernel
 :---------|:---------|:---------|:---------
-[Lilu](https://github.com/acidanthera/Lilu) | An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
-[VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel. Requires Lilu for full functioning.
-[SMCBatteryManager](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that parses battery info.
-[SMCProcessor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides power info of processor temperature.
-[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel HD 620.  
+[Lilu](https://github.com/acidanthera/Lilu) | A kext to patch many processes, required for AppleALC, WhateverGreen, VirtualSMC and many other kexts. Without Lilu, they will not work.
+[VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Emulates the SMC chip found on real macs, without this macOS will not boot.
+[SMCBatteryManager](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that parses used for measuring battery readouts on laptops.
+[SMCProcessor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for monitoring Intel CPU temperature.
+[SMCSuperIO](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for monitoring fan speed.
+[SMCLightSensor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for the ambient light sensor on laptops.
+[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel UHD 620.  
 [AppleALC.kext](https://github.com/acidanthera/AppleALC) | An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications. 
-[NVMeFix](https://github.com/acidanthera/NVMeFix) | NVMeFix is a set of patches for the Apple NVMe storage driver, IONVMeFamily. | 18.0.0 |  22.9.9
-[CPUFriend](https://github.com/acidanthera/CPUFriend) | A Lilu plug-in for dynamic power management data injection. | 10.0.0 |  
-[CPUFriendDataProvider](https://github.com/corpnewt/CPUFriendFriend) | A CPUFriend plug-in for CPU power management. | 10.0.0 |  
-[VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Contains updated Voodoo PS/2 Controller, improved Keyboard & Synaptics TouchPad. | 15.0.0 |  
+[NVMeFix](https://github.com/acidanthera/NVMeFix) | NVMeFix is a set of patches for the Apple NVMe storage driver, IONVMeFamily.
+[CPUFriend](https://github.com/acidanthera/CPUFriend) | A Lilu plug-in for dynamic power management data injection.
+[CPUFriendDataProvider](https://github.com/corpnewt/CPUFriendFriend) | A CPUFriend plug-in for CPU power management. 
+[VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Contains updated Voodoo PS/2 Controller, improved PS2 Keyboard & Synaptics TouchPad. 
+[VoodooI2C]
 [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) | Automatic handling of brightness keys based on ACPI Specification. | 16.0.0 |  
 [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X) | OS X open source driver for the Realtek RTL8111/8168 family. |  |  
 [RtWlanU](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter) | USB Wi-Fi adapter. |  |  
