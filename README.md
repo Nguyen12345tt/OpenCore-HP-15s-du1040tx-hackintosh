@@ -68,84 +68,48 @@
 </p>
 </details>
 
-<details>
-<summary>Catalina</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Catalina.png">
-</p>
-</details>
-
-<details>
-<summary>Mojave</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Mojave.png">
-</p>
-</details>
-
-<details>
-<summary>High Sierra</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/High%20Sierra.png">
-</p>
-</details>
-
-<details>
-<summary>Sierra</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Sierra.png">
-</p>
-</details>
-
 ## Original Hardware  💻
 Type | Spec | Status
 :---------|:---------|:----------
-Model Name      | Lenovo Thinkpad E570 (20H500C5TX) | ✅
-CPU              | Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz Kaby Lake | ✅
-RAM           | SK Hynix HMA851S6AFR6N-UH 8(4+4) GB 2133 MHz DDR4 | ✅
-Internal Graphics Card | Intel(R) HD Graphics 620 (1 GB) | ✅
-Wi-Fi             | Qualcomm Atheros QCA9377 | ❌
+Model Name      | HP 15s-du1040tx | ✅
+CPU              | Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz Comet Lake | ✅
+RAM           | 16GB 2667 MHz DDR4 | ✅
+Internal Graphics Card | Intel(R) UHD Graphics (1536 MB) | ✅
+Wi-Fi             | Realtek RTL8821CE | ❌
 Ethernet          | Realtek RTL8111/8168/8411 | ✅
-Audio       | Conexant CX20753/4 | ✅
-Touchpad | SynPS/2 Synaptics TouchPad | ✅
-SD Card Reader | O2 Micro SD/MMC | ✅
-Fingerprint | Validity Sensor VFS5011 | ❌
-Display | BOE CQ LCD Monitor(15.5 inch) | ✅
-Camera | Acer Integrated Camera | ✅
+Audio       | Realtek ALC236 | ✅
+Touchpad | I2C TouchPad | ✅
+
   
 ## Modifications  🔨
 Type | Spec | Status
 :---------|:---------|:----------
-Wi-Fi | Dell Wireless 1820A ac (BCM4350 + BCM2045A0) | ✅
-USB Wi-Fi | TL-WN823N | ✅ 
+USB Wi-Fi | Tp-Link Archer T2U | ✅ 
 
-- DW1820A not working on macOS Sonoma Beta 1. We have to use Intel Wi-Fi or USB Wi-Fi.
+- RTL8821CE not working on macOS. We have to use Intel Wi-Fi, USB Wi-Fi and Broadcom Wi-Fi.
 - You have to install USB drivers for working USB adapter.
 
 ## macOS Update History
 - ✅ macOS Sonoma 14.0 (Currently testing)
-- ✅ macOS Ventura 13.4 (Currently using)
+- ✅ macOS Ventura 13.6.7 (Currently using)
 - ✅ macOS Monterey 12.6
 - ✅ macOS Big Sur 11.7.3
-- ✅ macOS Catalina 10.15.7
-- ✅ macOS Mojave 10.14.6
-- ✅ macOS High Sierra 10.13.6
-- ✅ macOS Sierra 10.12.6
+
 
 ## What's working  💻
 Type | Status
 :---------|:---------
 Turbo boost and CPU frequency stage |  ✅
-Intel HD Graphics 620              |  ✅
+Intel UHD Graphics                  |  ✅
 Brightness control                  |  ✅
 HDMI                                |  ✅
-Audio Conexant CX20753/4            |  ✅
+Audio Realtek ALC236                |  ✅
 Realtek Ethernet RTL8111            |  ✅
-DW1820A Wi-Fi and Bluetooth, Airdrop, Handoff, SideCar, iMessage..         |  ✅
+TP-Link Archer T2U Wi-Fi, Handoff, SideCar, iMessage..         |  ✅
 USB 3.0 and Type-C (with Port Map)        |  ✅
 Touchpad (14 gestures are working)   |  ✅
 Battery status   |  ✅
 Camera   |  ✅
-Micro SD Card Reader | ✅
 S3 Sleep / Wake   |  ✅
 S4 Hibernation / Wake   |  ✅
 Shutdown / Reboot   |  ✅
@@ -154,70 +118,44 @@ Fn shortcut keys   |  ✅
 ## Kext Used
 Kext | Info | MinKernel | MaxKernel
 :---------|:---------|:---------|:---------
-[Lilu](https://github.com/acidanthera/Lilu) | An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS. | 8.0.0 |  
-[VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel. Requires Lilu for full functioning. | 8.0.0 |  
-[SMCBatteryManager](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that parses battery info. | 8.0.0 |  
-[SMCProcessor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides power info of processor temperature. | 11.0.0 |  
-[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel HD 620. | 10.0.0 |  
-[AppleALC.kext](https://github.com/acidanthera/AppleALC) | An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications. | 8.0.0 |  
+[Lilu](https://github.com/acidanthera/Lilu) | An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
+[VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel. Requires Lilu for full functioning.
+[SMCBatteryManager](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that parses battery info.
+[SMCProcessor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides power info of processor temperature.
+[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel HD 620.  
+[AppleALC.kext](https://github.com/acidanthera/AppleALC) | An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications. 
 [NVMeFix](https://github.com/acidanthera/NVMeFix) | NVMeFix is a set of patches for the Apple NVMe storage driver, IONVMeFamily. | 18.0.0 |  22.9.9
 [CPUFriend](https://github.com/acidanthera/CPUFriend) | A Lilu plug-in for dynamic power management data injection. | 10.0.0 |  
-[CPUFriendDataProvider](https://github.com/acidanthera/CPUFriend) | A CPUFriend plug-in for CPU power management. | 10.0.0 |  
-[FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) | Lilu Kernel extension for enabling: Sidecar, NightShift, AirPlay to Mac, Universal Control. | 16.5.0 |  
-[HibernationFixup](https://github.com/acidanthera/HibernationFixup) | An open source kernel extension providing a sync between RTC variables and NVRAM. | 16.0.0 |  
-[RestrictEvents](https://github.com/acidanthera/RestrictEvents) | Lilu Kernel extension for blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware. | 16.0.0 |  
-[NoTouchID](https://github.com/al3xtjames/NoTouchID) | Lilu plugin for disabling Touch ID support. | 16.0.0 |  19.5.9
+[CPUFriendDataProvider](https://github.com/corpnewt/CPUFriendFriend) | A CPUFriend plug-in for CPU power management. | 10.0.0 |  
 [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Contains updated Voodoo PS/2 Controller, improved Keyboard & Synaptics TouchPad. | 15.0.0 |  
 [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) | Automatic handling of brightness keys based on ACPI Specification. | 16.0.0 |  
-[AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | An open source kernel extension providing a set of patches required for non-native Airport Broadcom Wi-Fi cards. |  |  
-[AirPortBrcm4360_Injector]() | An open source kernel extension providing a set of patches required for non-native Airport Broadcom Wi-Fi cards. |  | 16.9.9
-[AirPortBrcmNIC_Injector]() | An open source kernel extension providing a set of patches required for non-native Airport Broadcom Wi-Fi cards. |  | 21.9.9
-[BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) | Injecting bluetooth firmware. | 21.0.0 |  
-[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM) | Injecting bluetooth firmware. | 14.0.0 | 20.9.9
-[BrcmFirmwareData](https://github.com/acidanthera/BrcmPatchRAM) | BrcmPatchRAM kext is a macOS driver which applies PatchRAM updates for Broadcom RAMUSB based devices. | 14.0.0 |  
-[BrcmPatchRAM2](https://github.com/acidanthera/BrcmPatchRAM) | BrcmPatchRAM kext is a macOS driver which applies PatchRAM updates for Broadcom RAMUSB based devices. | 15.0.0 | 18.9.9
-[BrcmPatchRAM3](https://github.com/acidanthera/BrcmPatchRAM) | BrcmPatchRAM kext is a macOS driver which applies PatchRAM updates for Broadcom RAMUSB based devices. | 19.0.0 |  
 [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X) | OS X open source driver for the Realtek RTL8111/8168 family. |  |  
 [RtWlanU](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter) | USB Wi-Fi adapter. |  |  
 [RtWlanU1827](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter) | USB Wi-Fi adapter. |  |  
 [HoRNDIS9.2](https://github.com/jwise/HoRNDIS) | Android USB Tethering. |  |  
-[USBPorts]([https://www.youtube.com/watch?v=rlTDHkPzjAk&t=654s](https://github.com/benbaker76/Hackintool)) | Kext to inject mapped USB ports |  |  
+[UTBMap](https://github.com/USBToolBox/tool) | Kext to inject mapped USB ports |  |  
   
 ## SSDT Used
 SSDT | Info | Status
 :---------|:---------|:---------
-[SSDT-PTSWAK](https://github.com/5T33Z0/OC-Little-Translated/tree/main/04_Fixing_Sleep_and_Wake_Issues/PTSWAK_Sleep_and_Wake_Fix) | Comprehensive Sleep and Wake Patch. | Functional
-[SSDR-EXT5-TP-LED](https://github.com/5T33Z0/OC-Little-Translated/tree/main/04_Fixing_Sleep_and_Wake_Issues/PTSWAK_Sleep_and_Wake_Fix) | Fixes ThinkPads breathing light of the Power Button LED will not return to normal after waking up. Also fixes an issue where the F4 microphone indicator status is not normal after waking up on older ThinkPad models. | Functional
-[SSDT-AC](https://github.com/5T33Z0/OC-Little-Translated/tree/main/01_Adding_missing_Devices_and_enabling_Features/AC_Adapter_(SSDT-AC)) | Attaches an AC Adapter Device existing in a Laptop's DSDT to the AppleACPIACAdapter service in the IORegistry of macOS. | Cosmetic
-[SSDT-BATT](https://dortania.github.io/OpenCore-Post-Install/laptop-specific/battery.html#battery-status) | Fixes the battery status indicator. | Functional
-[SSDT-DMAC](https://github.com/5T33Z0/OC-Little-Translated/tree/main/01_Adding_missing_Devices_and_enabling_Features/DMA_Controller_(SSDT-DMAC)) | Adds Direct Memory Access Controller (DMAC) device to IORegistry. | Cosmetic
+
 [SSDT-EC-USBX](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html#fixing-embedded-controller-ssdt-ecusbx) | Adds a fake Embedded Controller (SSDT-EC) and enables USB Power Management (SSDT-EC-USBX). | Functional
-[SSDT-FIXSHUTDOWN](https://dortania.github.io/OpenCore-Post-Install/usb/misc/shutdown.html#fixing-shutdown-restart) | Fixes Shutdown/Restart. Due to a missing S5 call that powers down the controller. | Functional
-[SSDT-FWHD](https://github.com/5T33Z0/OC-Little-Translated/tree/main/01_Adding_missing_Devices_and_enabling_Features/Fake_Firmware_Hub_(SSDT-FWHD)) | Adds Fake Firmware Hub Device (FWHD) device to the IORegistry in macOS. | Cosmetic
-[SSDT-HPET](https://dortania.github.io/Getting-Started-With-ACPI/Universal/irq.html#fixing-irq-conflicts-ssdt-hpet-oc-patches-plist) | Fixes IRQ conflicts. Required for on-board sound to work. | Functional
-[SSDT-OC-XOSI](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-prebuilt.html#trackpad) | OS Check Fix patch to simulate a version of Windows for Darwin. | Functional
 [SSDT-PLUG](https://dortania.github.io/Getting-Started-With-ACPI/Universal/plug.html#fixing-power-management-ssdt-plug) | Allow the kernel's XCPM(XNU's CPU Power Management) to manage CPU's power management. | Functional
-[SSDT-PMC](https://github.com/corpnewt/SSDTTime) | It specifically brings back NVRAM support and requires very little configuration for the end user. | Functional
 [SSDT-PNLF](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html) | Adds Backlight Control for Laptop Screens. | Functional
-[SSDT-PWRB-SLPB_STA0B](https://github.com/5T33Z0/OC-Little-Translated/tree/main/01_Adding_missing_Devices_and_enabling_Features/Power_and_Sleep_Button_(SSDT-PWRB:SSDT-SLPB)) | Enabling Power and Sleep Buttons. | Functional
-[SSDT-RTC_STA0F](https://github.com/5T33Z0/OC-Little-Translated/tree/main/01_Adding_missing_Devices_and_enabling_Features/System_Clock_(SSDT-RTC0)) | Force-enable the RTC Device. | Functional
 [SSDT-SBUS-MCHC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html) | Fixes System Management Bus and Memory Controller in macOS. | Functional
 
 ## boot-args Used
 boot-arg | Info
 :---------|:---------
 -v | Enables verbose.
--no_compat_check | macOS Sonoma not support MBP14,1. So we have to use this argument for boot Sonoma.
-brcmfx-country=#a | Changes the country code to XX (US, CN, #a, ..)
-darkwake=0 | Disables darkwake.
-swd_panic=1 | Avoids issue where going to sleep results in a reboot
--noDC9 | Fixes sleep issues.
--lilubetaall | Required for macOS Sonoma right now.
+debug=0x100 | This disables macOS's watchdog which helps prevents a reboot on a kernel panic.
+keepsyms=1 | This is a companion setting to debug=0x100 that tells the OS to also print the symbols on a kernel panic.
+alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](https://github.com/acidanthera/applealc/wiki/supported-codecs) to figure out which layout to use for your specific system. More info on this is covered in the [Post-Install Page](https://dortania.github.io/OpenCore-Post-Install/) |
 
 ## Changelog
 
 <details>
-<summary>2023-06-07</summary>
+<summary>2024-12-30</summary>
 
 - <b>Added</b>
   - Kernel
