@@ -152,7 +152,7 @@ SSDT | Info | Status
 [SSDT-SBUS-MCHC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html) | Fixes System Management Bus and Memory Controller in macOS. | Functional
 [SSDT-RTCAWAC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/awac.html) | SSDT-AWAC tries to re-enable the old RTC clock that is compatible with macOS, while SSDT-RTC0 will instead create a "fake" RTC clock if there is no legacy one to enable. | Functional
 [SSDT-ALS0](https://github.com/Acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-ALS0.dsl) | Enabling Ambient Light Sensor with macOS 10.15 or later. | Optional
-[SSDT-Disable_WiFi_RP10] | Disabling unsupported Wi-Fi Card on MacOS. | Optional
+[SSDT-Disable_WiFi_RP10](https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/blob/main/ACPI/SSDT-Disable_WiFi_RP10.aml) | Disabling unsupported Wi-Fi Card on MacOS. | Optional
 
 ## boot-args Used
 boot-arg | Info
