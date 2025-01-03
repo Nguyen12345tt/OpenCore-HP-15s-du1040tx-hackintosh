@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/macOS-Ventura-yellow" width="170"/> </a>
 <a href="https://github.com/acidanthera/OpenCorePkg/releases">
   <img src="https://img.shields.io/badge/OpenCore-1.0.3-9cf" width="160"/> </a>
-<a href="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/releases">
+<a href="https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/releases">
   <img src="https://img.shields.io/badge/release-EFI-blue.svg" width="120"/> </a>
   <a href="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/issues"> 
   <img src="https://img.shields.io/badge/Changelog-orange.svg" width="108"/> </a>
