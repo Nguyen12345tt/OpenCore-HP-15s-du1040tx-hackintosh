@@ -163,6 +163,7 @@ keepsyms=1 | This is a companion setting to debug=0x100 that tells the OS to als
 alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](https://github.com/acidanthera/applealc/wiki/supported-codecs) to figure out which layout to use for your specific system. More info on this is covered in the [Post-Install Page](https://dortania.github.io/OpenCore-Post-Install/). |
 igfxonln=1 | Forces all displays online, useful for resolving screen wake issues in 10.15.4+ on Coffee and Comet Lake.
 -igfxblr | Fix backlight registers on KBL, CFL and ICL platforms.
+-vi2c-force-polling | Enable I2C trackpad.
 
 ## Changelog
 
@@ -190,134 +191,7 @@ igfxonln=1 | Forces all displays online, useful for resolving screen wake issues
     - Add
       - USBToolBox
       - UTBMap
-  
 </details>  
-
-<details>
-<summary>2023-04-25</summary>
-
-- <b>Added</b>
-  - Kernel
-    - Add
-      - USBToolBox: Inject Mapped USB ports.
-      - UTBMap: USB port map.
-- <b>Removed</b>
-  - Kernel
-    - Add
-      - USBMap
-      - USBMapLegacy
-  
-</details>  
-  
-<details>
-<summary>2022-04-25 21:43</summary>
-
-- <b>Added</b>
-  - DeviceProperties
-    - Ethernet
-      - ´built-in 01 DATA´ for en0.
-  - Kernel
-    - Add
-      - Min and Max Kernel Values
-      - USBMap: Mapped USB ports for Catalina and newer.
-      - USBMapLegacy: Mapped USB ports for Mojave and older.
-      - BrcmBluetoothInjector: Bluetooth injection for Big Sur and older.
-      - BrcmPatchRAM2: Bluetooth injection from Sierra to Mojave.
-- <b>Changed</b>
-    - Kernel
-      - Quirks
-        - CustomSMBIOSGuide: False
-    - Misc
-      - Boot
-        - LauncherOption: Full
-    - PlatformInfo
-      - UpdateSMBIOSMode: Create
-    - UEFI
-      - Input
-        - PointerSupport: False
-- <b>Removed</b>
-  - Kernel
-    - Add
-      - VoodooPS2Mouse
-  
-</details>
-  
-<details>
-<summary>2022-03-25 16:25</summary>
-
-- <b>Added</b>
-  - Kexts
-    - SMCBatteryManager: For true graphic in System Preferences.
-    - RestrictEvents: For changed CPU name on About This Mac. (Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz)
-    - USBToolBox: Injects UTBMap.kext.
-    - UTBMap: Mapped USB Ports.
-- <b>Changed</b>  
-    - config
-      - Edited for CPU name. Don't change CPUType value.
-        - Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz. 
-- <b>Removed</b>
-  - Kexts
-    - ACPIBatteryManager: Battery graphic issue on System Preferences.
-    - SMCSuperIO: Laptop doesn't have a fan sensor.
-    - USBInjectAll: No need anymore.
-    - USBPorts: USBToolBox and UTBMap is using now.
-  
-</details>
-  
-<details>
-<summary>2022-03-23 18:35</summary>
-
-- <b>Added</b>
-  - Kexts
-    - BrightnessKeys: Brightness control on keyboard.
-      - ACPI Patch
-        - Rename (NBCF, 0x00) to Name (NBCF, 0x01)
-- <b>Disabled</b>
-  - ACPI
-    - SSDT-CLICKPAD some compabilty problems.
-    - SSDT-KBD
-      - Using BrightnessKeys.kext and ACPI patch.
-      - Disabled Rename _Q14 to XQ14 (TP-up)
-      - Disabled Rename _Q15 to XQ15 (TP-down)
-</details>
-
-<details>
-<summary>2023-07-15</summary>
-
-- <b>Added</b>
-  - ACPI
-    - SSDT-AC for AC adapter in IORegistryExplorer.
-    - SSDT-CLICKPAD for better touchpad.
-    - SSDT-DMAC for DMAC device in IORegistryExplorer.
-    - SSDT-EXT5-TP-LED for fix led on power button.
-    - SSDT-FWHD for FWHD device in IORegistryExplorer.
-    - SSDT-KBD for brightness control from keys.
-      - ACPI Patch
-        - Rename PNLF to XNLF
-        - Rename _Q14 to XQ14 (TP-up)
-        - Rename _Q15 to XQ15 (TP-down)
-    - SSDT-PMC 
-    - SSDT-PTSWAK for better sleep and wake.
-      - ACPI Patch
-        - Name0D-03 to 00
-        - Name0D-04 to 00
-        - Name6D-03 to 00
-        - Name6D-04 to 00
-        - Rename _PTS to ZPTS(1,N)
-        - Rename _WAK to ZWAK(1,N)
-    - SSDT-PWRB-SLPB_STA0B for power and sleep button.
-    - SSDT-RTC_STA0F for enable RTC device.
-  - Kexts
-    - ACPIBatteryManager: For AppleSmartBatteryManager on IORegistryExplorer.
-- <b>Changed</b>
-  - ACPI
-    - SSDT-NoHybGfx.aml: For disable dGPU.
-  - Kexts
-    - AlpsHID
-    - 
-    - 
-  
-</details> 
 
 ## Installation Steps
 
@@ -330,10 +204,10 @@ igfxonln=1 | Forces all displays online, useful for resolving screen wake issues
   - [Big Sur](https://drive.google.com/file/d/1uP9ixgsrsFxUl55yTi_fOoG025rYR5gf/view)
   
 ### Writing OSX Image
-- Unzip the zip file to desktop.
+- Download DMG file on link.
 - Download [balenaEtcher](https://www.balena.io/etcher/).
 - Open program and click to `Flash from file`.
-- Select the OSX image `.raw` file from the popup window.
+- Select the OSX image `.dmg` file from the popup window.
 - Click to `Select target` and select OSX image.
 - Click to `Flash!` and allow app in popup window.
 <p align="center">
