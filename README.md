@@ -28,8 +28,6 @@
   - [SSDTs Used](#ssdt-used)
   - [Changelog](#changelog)
   - [Installation Steps](#installation-steps)
-  - [How to make it better?](#how-to-make-it-better)
-    - [Advanced Resolution](#advanced-resolution)
   - [Credits](#credits)
   
 ## Screenshots 📷
