@@ -144,12 +144,15 @@ Kext | Info | MinKernel | MaxKernel
 SSDT | Info | Status
 :---------|:---------|:---------
 [SSDT-GPI0](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/trackpad-methods/manual.html) | Enable Trackpad I2C on MacOS. | Functional
-[SSDT-BATT](https://dortania.github.io/OpenCore-Post-Install/laptop-specific/battery.html#battery-status) | Fixes the battery status indicator. | Functional
+[SSDT-NoHybGfx](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/laptop-disable.html#bumblebee-method) | Disable dGPU on MacOS. | Functional
 [SSDT-EC and SSDT-USBX](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html#fixing-embedded-controller-ssdt-ecusbx) | Adds a fake Embedded Controller (SSDT-EC) and enables USB Power Management (SSDT-USBX). | Functional
-[SSDT-HPET](https://dortania.github.io/Getting-Started-With-ACPI/Universal/irq.html#fixing-irq-conflicts-ssdt-hpet-oc-patches-plist) | Fixes IRQ conflicts. Required for on-board sound to work. | Functional
+[SSDT-HPET](https://dortania.github.io/Getting-Started-With-ACPI/Universal/irq.html#fixing-irq-conflicts-ssdt-hpet-oc-patches-plist) | Fixes IRQ conflicts. Required for on-board sound to work. | Optional
 [SSDT-PLUG](https://dortania.github.io/Getting-Started-With-ACPI/Universal/plug.html#fixing-power-management-ssdt-plug) | Allow the kernel's XCPM(XNU's CPU Power Management) to manage CPU's power management. | Functional
 [SSDT-PNLF](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html) | Adds Backlight Control for Laptop Screens. | Functional
 [SSDT-SBUS-MCHC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html) | Fixes System Management Bus and Memory Controller in macOS. | Functional
+[SSDT-RTCAWAC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/awac.html) | SSDT-AWAC tries to re-enable the old RTC clock that is compatible with macOS, while SSDT-RTC0 will instead create a "fake" RTC clock if there is no legacy one to enable. | Functional
+[SSDT-ALS0](https://github.com/Acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-ALS0.dsl) | Enabling Ambient Light Sensor with macOS 10.15 or later. | Optional
+[SSDT-Disable_WiFi_RP10] | Disabling unsupported Wi-Fi Card on MacOS. | Optional
 
 ## boot-args Used
 boot-arg | Info
@@ -157,7 +160,9 @@ boot-arg | Info
 -v | Enables verbose.
 debug=0x100 | This disables macOS's watchdog which helps prevents a reboot on a kernel panic.
 keepsyms=1 | This is a companion setting to debug=0x100 that tells the OS to also print the symbols on a kernel panic.
-alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](https://github.com/acidanthera/applealc/wiki/supported-codecs) to figure out which layout to use for your specific system. More info on this is covered in the [Post-Install Page](https://dortania.github.io/OpenCore-Post-Install/) |
+alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](https://github.com/acidanthera/applealc/wiki/supported-codecs) to figure out which layout to use for your specific system. More info on this is covered in the [Post-Install Page](https://dortania.github.io/OpenCore-Post-Install/). |
+igfxonln=1 | Forces all displays online, useful for resolving screen wake issues in 10.15.4+ on Coffee and Comet Lake.
+-igfxblr | Fix backlight registers on KBL, CFL and ICL platforms.
 
 ## Changelog
 
