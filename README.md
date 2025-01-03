@@ -31,7 +31,6 @@
   - [How to make it better?](#how-to-make-it-better)
     - [Advanced Resolution](#advanced-resolution)
   - [Credits](#credits)
-  - [Donate](#-donate---ba%C4%9F%C4%B1%C5%9F-)
   
 ## Screenshots 📷
 
