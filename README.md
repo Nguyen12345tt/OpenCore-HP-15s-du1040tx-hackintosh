@@ -313,7 +313,8 @@ igfxonln=1 | Forces all displays online, useful for resolving screen wake issues
   - ACPI
     - SSDT-NoHybGfx.aml: For disable dGPU.
   - Kexts
-    - AlpsHID:
+    - AlpsHID
+    - 
     - 
   
 </details> 
@@ -322,9 +323,11 @@ igfxonln=1 | Forces all displays online, useful for resolving screen wake issues
 
 ### Downloading OSX Image
 - Click to OneDrive link and download it.
-  - [Ventura](https://github.com/yusufklncc/Hackintosh-for-All-Computers#-macos-ventura-)
-  - [Monterey](https://github.com/yusufklncc/Hackintosh-for-All-Computers#macos-monterey)
-  - [Big Sur](https://github.com/yusufklncc/Hackintosh-for-All-Computers#macos-big-sur)
+  - [Seoquia](https://drive.google.com/file/d/1ro8m1TrNJXmcWPsZOnEDKavu-gqhJm3l/view)
+  - [Sonoma](https://drive.google.com/file/d/1QwXaDNc-YXUEEJxK2V1TewL5ZsfsE2UB/view)
+  - [Ventura](https://drive.google.com/file/d/1QjbxYWEWK45FCbi8EUJj3skgocEKJVj7/view)
+  - [Monterey](https://drive.google.com/file/d/1D2qMqzDi72akHkLBa6r1EKT_DXHIDs47/view)
+  - [Big Sur](https://drive.google.com/file/d/1uP9ixgsrsFxUl55yTi_fOoG025rYR5gf/view)
   
 ### Writing OSX Image
 - Unzip the zip file to desktop.
