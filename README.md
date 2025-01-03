@@ -143,9 +143,6 @@ Kext | Info | MinKernel | MaxKernel
 ## SSDT Used
 SSDT | Info | Status
 :---------|:---------|:---------
-
-SSDT | Info | Status
-:---------|:---------|:---------
 [SSDT-GPI0](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/trackpad-methods/manual.html) | Enable Trackpad I2C on MacOS. | Functional
 [SSDT-BATT](https://dortania.github.io/OpenCore-Post-Install/laptop-specific/battery.html#battery-status) | Fixes the battery status indicator. | Functional
 [SSDT-EC and SSDT-USBX](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html#fixing-embedded-controller-ssdt-ecusbx) | Adds a fake Embedded Controller (SSDT-EC) and enables USB Power Management (SSDT-USBX). | Functional
