@@ -118,25 +118,27 @@ Fn shortcut keys   |  ✅
 ## Kext Used
 Kext | Info | MinKernel | MaxKernel
 :---------|:---------|:---------|:---------
-[Lilu](https://github.com/acidanthera/Lilu) | A kext to patch many processes, required for AppleALC, WhateverGreen, VirtualSMC and many other kexts. Without Lilu, they will not work.
-[VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Emulates the SMC chip found on real macs, without this macOS will not boot.
-[SMCBatteryManager](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that parses used for measuring battery readouts on laptops.
-[SMCProcessor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for monitoring Intel CPU temperature.
-[SMCSuperIO](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for monitoring fan speed.
-[SMCLightSensor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for the ambient light sensor on laptops.
-[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel UHD 620.  
-[AppleALC.kext](https://github.com/acidanthera/AppleALC) | An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications. 
-[NVMeFix](https://github.com/acidanthera/NVMeFix) | NVMeFix is a set of patches for the Apple NVMe storage driver, IONVMeFamily.
-[CPUFriend](https://github.com/acidanthera/CPUFriend) | A Lilu plug-in for dynamic power management data injection.
-[CPUFriendDataProvider](https://github.com/corpnewt/CPUFriendFriend) | A CPUFriend plug-in for CPU power management. 
-[VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Contains updated Voodoo PS/2 Controller, improved PS2 Keyboard & Synaptics TouchPad. 
-[VoodooI2C]
-[BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) | Automatic handling of brightness keys based on ACPI Specification. | 16.0.0 |  
-[RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X) | OS X open source driver for the Realtek RTL8111/8168 family. |  |  
+[Lilu](https://github.com/acidanthera/Lilu) | A kext to patch many processes, required for AppleALC, WhateverGreen, VirtualSMC and many other kexts. Without Lilu, they will not work.|
+[VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Emulates the SMC chip found on real macs, without this macOS will not boot.|
+[SMCBatteryManager](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that parses used for measuring battery readouts on laptops.|
+[SMCProcessor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for monitoring Intel CPU temperature.|
+[SMCSuperIO](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for monitoring fan speed.|
+[SMCLightSensor](https://github.com/acidanthera/VirtualSMC) | a member of VirtualSMC that provides used for the ambient light sensor on laptops.|
+[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel UHD 620.|  
+[AppleALC.kext](https://github.com/acidanthera/AppleALC) | An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.|
+[NVMeFix](https://github.com/acidanthera/NVMeFix) | NVMeFix is a set of patches for the Apple NVMe storage driver, IONVMeFamily.|
+[CPUFriend](https://github.com/acidanthera/CPUFriend) | A Lilu plug-in for dynamic power management data injection.|
+[CPUFriendDataProvider](https://github.com/corpnewt/CPUFriendFriend) | A CPUFriend plug-in for CPU power management.| 
+[VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Contains updated Voodoo PS/2 Controller, improved PS2 Keyboard & Synaptics TouchPad.| 
+[VoodooI2C](https://github.com/VoodooI2C/VoodooI2C) | Attaches to I2C controllers to allow plugins to talk to I2C trackpads.|
+[VoodooI2CHID](https://github.com/VoodooI2C/VoodooI2C) | Can be used with I2C/USB Touchscreens and Trackpads.|
+[BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) | Automatic handling of brightness keys based on ACPI Specification.|
+[RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X) | OS X open source driver for the Realtek RTL8111/8168 family. |  
 [RtWlanU](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter) | USB Wi-Fi adapter. |  |  
 [RtWlanU1827](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter) | USB Wi-Fi adapter. |  |  
-[HoRNDIS9.2](https://github.com/jwise/HoRNDIS) | Android USB Tethering. |  |  
-[UTBMap](https://github.com/USBToolBox/tool) | Kext to inject mapped USB ports |  |  
+[HoRNDIS9.2](https://github.com/jwise/HoRNDIS) | Android USB Tethering. |   
+[UTBMap](https://github.com/USBToolBox/tool) | Kext to inject mapped USB ports |  
+[USBToolBox](https://github.com/USBToolBox/kext) | Kext on UTBMap |
   
 ## SSDT Used
 SSDT | Info | Status
@@ -163,32 +165,20 @@ alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](http
 - <b>Added</b>
   - Kernel
     - Add
-      - USBPorts: For macOS Sonoma.
-      - RtWlanU: USB Wi-Fi Adapter for macOS Sonoma.
-      - RtWlanU1827: USB Wi-Fi Adapter for macOS Sonoma.
-  - NVRAM
-    - 7C436110-AB2A-4BBB-A880-FE41995C9F82
-      - bluetoothExternalDongleFailed
-        - 00 : Bluetooth Support for macOS 13.4 and later.
-      - bluetoothInternalControllerInfo
-        - 0000000000000000000000000000 : Bluetooth Support for macOS 13.4 and later.
-      - boot-args
-        - -lilubetaall for macOS Sonoma.
-        - -no_compat_check for macOS Sonoma.
+      - RtWlanU: USB Wi-Fi Adapter for macOS.
+      - RtWlanU1827: USB Wi-Fi Adapter for macOS.
 - <b>Changed</b>
   - Kernel
     - Add
-      - NVMEFix: Max Kernel 22.9.9. Because macOS Sonoma not supported.
+      - NVMEFix: Because macOS not supported.
   - NVRAM
     - 7C436110-AB2A-4BBB-A880-FE41995C9F82
       - csr-active-config
         - 03080000 for USB Wi-Fi Adapter.
-  - PlatformInfo
-    - SMBIOS to MBP15,1 for macOS Sonoma installation. Change to 14,1 after installation.
 - <b>Removed</b>
   - ACPI
     - Add
-      - SSDT-KBD.aml: Useless
+      - SSDT-Disable-WiFi-RP05.aml: Disable WiFi-card unsupported.
   - Kernel
     - Add
       - USBToolBox
@@ -285,7 +275,7 @@ alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](http
 </details>
 
 <details>
-<summary>2022-03-23 15:15</summary>
+<summary>2023-07-15</summary>
 
 - <b>Added</b>
   - ACPI
@@ -314,15 +304,10 @@ alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](http
     - ACPIBatteryManager: For AppleSmartBatteryManager on IORegistryExplorer.
 - <b>Changed</b>
   - ACPI
-    - SSDT-XOSI to SSDT-OC-XOSI
-      - ACPI Patch
-        - Rename _OSI to XOSI (OS)
+    - SSDT-NoHybGfx.aml: For disable dGPU.
   - Kexts
-    - FeatureUnlock 1.0.7 to 1.0.6 for fix Airplay to Mac.
-- <b>Removed</b>
-  - Kexts
-    - SMCBatteryManager: Because using ACPIBatteryManager.kext
-    - SMCLightSensor: Because laptop doesn't have a sensor.
+    - AlpsHID:
+    - 
   
 </details> 
 
@@ -333,7 +318,6 @@ alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](http
   - [Ventura](https://github.com/yusufklncc/Hackintosh-for-All-Computers#-macos-ventura-)
   - [Monterey](https://github.com/yusufklncc/Hackintosh-for-All-Computers#macos-monterey)
   - [Big Sur](https://github.com/yusufklncc/Hackintosh-for-All-Computers#macos-big-sur)
-  - [Catalina](https://github.com/yusufklncc/Hackintosh-for-All-Computers#macos-catalina)
   
 ### Writing OSX Image
 - Unzip the zip file to desktop.
@@ -361,117 +345,13 @@ alcid=xxx | Used for setting layout-id for AppleALC, see [supported codecs](http
   - `Disable`
     - Secure Boot
   - `Enable`
-    - CSM
-    
-### macOS Installation
-- Now let's turn off our computer and boot from USB. Choose the `Install macOS Monterey` (whatever you have) option on OpenCore menu and go to the installation screen.
-- <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%201.png">
-- What to do on the following screens:
-  - Select language and continue.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%202.png">
-  - Open `Disk Utility` from the menu to prepare our disk.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%203.png">
-  - Select `Show All Devices` from the `View` option and select the name of our disk and click `Erase`.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%204.png">
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%205.png">
-  - Rename the disk and erase as `APFS/GUID`.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%206.png">
-  - Now close `Disk Utility` and select `Install macOS Sonoma` then next next next.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%208.png">
-  - Select renamed disk and click continue.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2010.png">
-  - When the installation is finished,  `macOS Installer` option will be selected automatically every boot step until this option is `gone`.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2011.png">
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2012.png">
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2013.png">
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2014.png">
-  - After last boot, the language selection screen will welcome us. Select language and continue.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2015.png">
-  - Don't login `iCloud` account and continue. Because we need to set our `serial numbers and ROM for iCloud and iMessage`.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2016.png">
-  - Now we can see `Desktop`.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Installation/macOS%2017.png">
+    - VT-x(Virtualtion Technology)
 
-### Post Installation
-
-<br>
-
-<details>
-<summary><b>Broadcom Wi-Fi - Sonoma</b></summary>
-  
-- Dowload and Open [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher/releases). Click `Post-Install Root Patch` button.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/oclp-menu.png">
-- Click `Start Root Patching`.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/post-install-menu.png">
-- Click `Yes` and type password.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/start-root-patch.png">
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/root-patching.png">
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/root-patching-2.png">
-- Click `Reboot`
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/reboot-apply.png">
-- Wi-Fi started working.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/Broadcom%20Wi-Fi%20Activation%20-%20OCLP/sonoma-wifi.png">
-  
-</details>  
-
-- Open config file with `Text Edit`.
-  - Search `HideAuxiliary` and change `false` value to `true`.
-  - Search `SecureBootModel` and change `Disabled` value to `Default`.
-    - If you have patched your system with `OCLP`, do not do this step.
-  - Search `boot-args` and delete `-v` argument.
-- Now we have to set our serial numbers and ROM value.
-  - Download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS/archive/refs/heads/master.zip) and open .command file. If program asks `Download Python` download it. After that select option 3.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/GenSMBIOS/GenSMBIOS%201.png">
-  - Now list 5 SMBIOS first. `MacBookPro14,1`
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/GenSMBIOS/GenSMBIOS%202.png">
-  - Select and copy first Serial.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/GenSMBIOS/GenSMBIOS%203.png">
-  - Go [check](https://checkcoverage.apple.com/) serial number. Your serial should be like this. If not, try second serial.
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/GenSMBIOS/Check%20Serial.png">
-  - Search MacBookPro15,1 and replace `Type > SystemProductName, Serial > SystemSerialNumber, Board Serial > MLB and SmUUID > SystemUUID` values. Now we will set our ROM value.
-  - Go `System Setting > Netwotk > Ethernet > Details > Hardware`. If our MAC adress is `54:1A:AF:43:70:CA` remove `:` characters = `541AAF4370CA`. Convert it to [Base64](https://base64.guru/converter/encode/hex). 
-  - Now we have `VBqvQ3DK`. Replace this with ROM value and save config file.
-  - Delete default `USBPorts` kext in OC/Kexts and rename other one to `USBPorts`.
-  - Restart computer and press `Space` key on OpenCore menu. Then enter `ResetNVRAM`. After that BIOS settings may change. Check it and boot macOS.
-  - Now you can login iCloud, iMessage or other apple services and you can use macOS.
-
-## How to make it better?
-<details>  
-  <summary> <h3>Advanced Resolution</h3> </summary>
-
-- Use RDM for 1600x900 resolution which i am using currently. 
-  - [Download RDM](https://onedrive.live.com/download?cid=83E8AF2D3EA2BA57&resid=83E8AF2D3EA2BA57%214113&authkey=ALMpGB-on3pqMmY)
-  
-- 1366x768
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/RDM/1366x768.png" alt="1366x768" width="600"> 
-- 1600x900 
-  - <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/RDM/1600x900.png" alt="1600x900" width="600">
- 
-## How to Use?
-- Download and open RDM.app. Follow images below.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/RDM/RDM%201680x1050.png" alt="1680x1050" width="600"> 
-
-- Set resolution 1680x1050.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/RDM/RDM%20Edit%20Button.png" alt="RDM Edit Button" width="600"> 
-
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/RDM/RDM%20Resolution%20Settings.png" alt="RDM Resolution Settings" width="600"> 
-
-- Set what resolution you want. Click save, enter password and reboot.
-<img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/RDM/RDM%201600x900.png" alt="1600x900" width="600">  
-
-- Open RMD and select resolution what you want. This is only once.
-</details>  
       
 ## Credits
   
  - [Dortania](https://dortania.github.io) for developing OpenCore.
  - [Apple](https://www.apple.com) for macOS.
  - [Acidanthera](https://github.com/acidanthera) for most of the kexts.
- - [RehabMan](https://github.com/RehabMan) for battery patches.
- - [Sniki](https://github.com/Sniki) for USB kext.
+ - [Hackintosh Việt Nam - OpenCore](https://www.facebook.com/groups/hackintosh.vietnam) for install MacOS.
  - And anyone else that helped to develop and improve hackintoshing.
-
-<h1 align="center"> Donate - Bağış </h1>
-<p align="center">
-<a href="https://github.com/yusufklncc/yusfklncc/blob/main/Donate%20-%20Ba%C4%9F%C4%B1%C5%9F.md">
-  <img src="https://github.com/yusufklncc/yusfklncc/blob/main/Resources/Donate.png" width="300">
