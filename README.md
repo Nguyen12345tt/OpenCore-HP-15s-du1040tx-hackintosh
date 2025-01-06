@@ -195,5 +195,5 @@ igfxonln=1 | Forces all displays online, useful for resolving screen wake issues
  - [Dortania](https://dortania.github.io) for developing OpenCore.
  - [Apple](https://www.apple.com) for macOS.
  - [Acidanthera](https://github.com/acidanthera) for most of the kexts.
- - [Hackintosh Việt Nam - OpenCore](https://www.facebook.com/groups/hackintosh.vietnam) for install MacOS.
+ - [Hackintosh Việt Nam - OpenCore](https://www.facebook.com/groups/hackintosh.vietnam) for fix error to install MacOS.
  - And anyone else that helped to develop and improve hackintoshing.
