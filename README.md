@@ -1,7 +1,7 @@
 <h1 align="center"> macOS on HP 15s-du1040tx </h1>
 
 <p align="center">
-  <img src="https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/blob/main/Resources/Screenshot%202025-01-02%20at%2016.07.51.png" alt="15s-du1040tx" width="750">
+  <img src="https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/blob/main/Resources/78103E77-F63E-454F-9C56-8DC20985951F_1_201_a.jpeg" alt="15s-du1040tx" width="750">
 </p>
 
 <h4 align="center"> OpenCore config for Hackintosh HP 15s-du1040tx </h4>
