@@ -19,51 +19,13 @@
 
 
 ## Table of Contents
-  - [Screenshots](#screenshots-)
   - [Original Hardware](#original-hardware--)
   - [Modifications](#modifications--)
-  - [macOS Update History](#macos-update-history)
   - [What's working](#whats-working--)
   - [Kexts Used](h#kext-used)
   - [SSDTs Used](#ssdt-used)
   - [Changelog](#changelog)
   - [Installation Steps](#installation-steps)
-  - [Credits](#credits)
-  
-## Screenshots 📷
-
-### Sonoma
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Sonoma-14-3.png">
-</p>
-
-<details>
-<summary>Sonoma</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Sonoma.png">
-</p>
-</details>  
-  
-<details>
-<summary>Ventura</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Ventura.png">
-</p>
-</details>
-
-<details>
-<summary>Monterey</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Monterey.png">
-</p>
-</details>
-
-<details>
-<summary>Big Sur</summary>
-<p align="center">
-  <img src="https://github.com/yusufklncc/Lenovo-Thinkpad-E570-Hackintosh/blob/main/Resources/macOS%20Desktop/Big%20Sur.png">
-</p>
-</details>
 
 ## Original Hardware  💻
 Type | Spec | Status
