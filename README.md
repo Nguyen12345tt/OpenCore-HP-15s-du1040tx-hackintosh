@@ -49,7 +49,6 @@ USB Wi-Fi | Tp-Link Archer T2U | ✅
 - You have to install USB drivers for working USB adapter.
 
 ## macOS Update History
-- ✅ macOS Sonoma 14.0 (Currently testing)
 - ✅ macOS Ventura 13.6.7 (Currently using)
 - ✅ macOS Monterey 12.6
 - ✅ macOS Big Sur 11.7.3
