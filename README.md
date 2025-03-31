@@ -22,7 +22,7 @@
   - [Original Hardware](#original-hardware--)
   - [Modifications](#modifications--)
   - [What's working](#whats-working--)
-  - [Kexts Used](h#kext-used)
+  - [Kexts Used](#kext-used)
   - [SSDTs Used](#ssdt-used)
   - [Changelog](#changelog)
   - [Installation Steps](#installation-steps)
