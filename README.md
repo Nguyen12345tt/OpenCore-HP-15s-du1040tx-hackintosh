@@ -10,7 +10,7 @@
 <a href="https://www.apple.com/macos/sonoma-preview/">
   <img src="https://img.shields.io/badge/macOS-Ventura-yellow" width="170"/> </a>
 <a href="https://github.com/acidanthera/OpenCorePkg/releases">
-  <img src="https://img.shields.io/badge/OpenCore-1.0.3-9cf" width="160"/> </a>
+  <img src="https://img.shields.io/badge/OpenCore-1.0.4-9cf" width="160"/> </a>
 <a href="https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/releases">
   <img src="https://img.shields.io/badge/release-EFI-blue.svg" width="120"/> </a>
   <a href="https://github.com/Nguyen12345tt/OpenCore-HP-15s-du1040tx-hackintosh/issues"> 
